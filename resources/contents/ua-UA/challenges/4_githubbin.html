@@ -1,0 +1,56 @@
+<div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Створіть GitHub акаунт і додайте ваше ім'я користувача до конфігурації Git.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Працювати Краще, Разом</h2>
+
+    <p>Репозиторій, який ви щойно стоврили, поки що лише на вашому комп'ютері, що досить зручно, але водночас його важко
+        розділити і працювати разом із іншими. Не турбуйтеся, якраз для цього існує GitHub!</p>
+
+    <p>GitHub — це веб-сайт, що дозволяє людям звідусіль завантажувати те, над чим вони працюють із Git'ом, щоб будь-хто
+        міг із легкістю працювати над тим самим проектом. GitHub схожий на центральний репозиторій для вас і
+        кого-завгодно ще. Ви
+        is a website that allows people everywhere to upload what they're working on with Git so that everyone can
+        easily work together on the same project. GitHub which acts as the central repository for you and everyone else
+        to share. Ви додаєте ваші зміни до нього або стягуєте зміни від інших.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Створіть GitHub акаунт</h3>
+
+    <p>Перейдіть за посиланням <a href="http://github.com" target="_blank">github.com</a> і зареєструйте безкоштовний
+        акаунт. <strong>Висока п'ять, ласкаво просимо!</strong></p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Додайте ім'я користувача GitHub до Git</h3>
+    <p>Додайте ваше ім'я користувача GitHub до вашої конфігурації Git. Ми це робимо лише задля Git-it; це робить легшим перевірку
+        наступних завдань. Збередіть його точно таким, як на GitHub і <strong>великими буквами, там де вони великі</strong>.
+        Зверніть увагу, що непотрібно вводити "&#60;" та "&#62;".</p>
+
+    <p>Додайте ваше ім'я користувача GitHub до вашої конфігурації Git:</p>
+    <code class="shell">git config --global user.username &#60;USerNamE&#62;</code>
+
+    <p>Ви можете перевірити, що саме ви зберегли у вашій конфігурації, набравши:</p>
+    <code>git config --global user.username</code>
+</div>
+
+{{{ verify_button }}}
+
+<div class="chal-tip grey-border border-box">
+    <p>Переконайтеся, що ви набрали "<strong>user.username</strong>" вище, а не "user.name", що перезапише ім'я,
+        яке ви налаштували у першому завданні і залишить вас без імені користувача! Якщо ви дізналися, що зробили саме так,
+        начого страшного, лише повторіть крок із першого завдання аби налаштувати ваше ім'я, а потім завершіть крок згори</p>
+</div>
+
+<div class="chal-no-pass grey-border border-box">
+    <h4>Різниця між ім'ям користувача на GitHub і в налаштуваннях Git</h4>
+
+    <p>Розповсюдженна помилка коли ім'я користувача на GitHub не такого ж регістру як у <code>git config</code>.
+        Наприклад, 'JLord' це не те ж саме, що й 'jlord'</p>
+    <p>Щоб змінити ім'я користувача, що ви встановили у Git, просто запустіть ту ж команду, що й перед цим, але із
+        правильним регістром:</p>
+    <p><code class="shell">git config --global user.username &#60;USerNamE&#62;</code></p>
+    <p>Коли зробите ці зміни, перевірте завдання знову!</p>
+</div>

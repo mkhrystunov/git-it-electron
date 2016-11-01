@@ -1,0 +1,65 @@
+<div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Злийте ващу гілку локально, видаліть гілку і зтягніть зміни із upstream.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Очищення</h2>
+
+    <p>Коли гілка вам більше не потрібна ви можете видалити її локально і веддалено. Це корисно, щоб не закінчити із
+        купую непотрібних старих гілок.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Злиття локально</h3>
+    <p>Ваш запит зтягнення був злитий! Ваша гілка була злита в гілку 'gh-pages' у оригіналі на GitHub. Ви можете злити
+        вашу гілку локально теж.</p>
+
+    <p>Спершу перейдіть на гілку, в яку ви хочете злити. В нашому випадку на гілку 'gh-pages'.</p>
+    <p><code class="shell">git checkout gh-pages</code></p>
+
+    <p>Тепер скажіть Git'у яку гілку ви хочете злити — в нашому випадку, ваша гілка, що починається на "add-".</p>
+    <p><code class="shell">git merge &#60;BRANCHNAME&#62;</code></p>
+
+    <p>Приберіть шляхом видалення вашої гілки. Після її злиття вона більше не потрібна.</p>
+    <p><code class="shell">git branch -d &#60;BRANCHNAME&#62;</code></p>
+
+    <p>Також ви можете видалити її із вашого віддаленого репозиторію на GitHub:</p>
+    <p><code class="shell">git push &#60;REMOTENAME&#62; --delete &#60;BRANCHNAME&#62;</code></p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Зтягнення із Upstream</h3>
+    <p>І останнє, після вашого запиту зтягнення оригінал змінився — Reporobot додва ваше ім'я до веб-сайту!
+        Якщо ви зтягнете ці зміни із upstream ваша локальна версія стане актуальною. Ви зможете так само побачити його
+        за адресою: yourusername.github.io/patchwork.</p>
+
+    <p>Щоб зтягнути зміни із оригіналу:</p>
+    <p><code class="shell">git pull upstream gh-pages</code></p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Вітаємо!</h2>
+    <p>Ви створили локальні репозиторії, віддалені репозиторії, попрацювали із співавтором, надслали зміни, зтягнули
+        зміни і долучилися до мільйонів інших розробників у розвитку відкритого коду!</p>
+
+    <p>Відвідайте <a href="https://jlord.github.io/patchwork" target="_blank">jlord.github.io/patchwork</a>, щоб
+        побачити ваше ім'я! Хочете продовження? Перегляньте секцію
+        <a href="../pages/resources.html#what-next">What Next</a> на сторінці ресурсів цієї програми.</p>
+</div>
+
+{{{ verify_directory_button }}}
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Злити гілку в поточну гілку</strong></li>
+        <code class="shell">git merge &#60;BRANCHNAME&#62;</code>
+        <li><strong>Змінити гілку, на якій ви працюєте</strong></li>
+        <code class="shell">git checkout &#60;BRANCHNAME&#62;</code>
+        <li><strong>Видалити гілку локально</strong></li>
+        <code class="shell">git branch -d &#60;BRANCHNAME&#62;</code>
+        <li><strong>Видалити ввіддалену гілку</strong></li>
+        <code class="shell">git push &#60;REMOTENAME&#62; --delete &#60;BRANCHNAME&#62;</code>
+        <li><strong>Зтягнути зміни із віддаленого репозиторію</strong></li>
+        <code class="shell">git pull &#60;REMOTENAME&#62; &#60;BRANCHNAME&#62;</code>
+    </ul>
+</div>

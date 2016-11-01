@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Git-it</title>
+        <link rel="stylesheet" href="../../../assets/css/new-style.css">
+        <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+        <link rel="stylesheet" href="../../../assets/css/buttons.css">
+        <link rel="stylesheet" href="../../../assets/octicons.css">
+        <script src="../../../lib/challenges-completed.js"></script>
+        <script src="../../../lib/handle-external-links.js"></script>
+    </head>
+    <body class="index-page">
+        <header class="site-header">
+            <div class="lang-select">
+                <select id="lang-select" class="lang-select btn-outline">
+                    {{ localemenu }}
+                </select>
+            </div>
+            <a class="filledblock" href="./index.html">Git-it</a>
+        </header>
+
+        <div class="page-wrapper">
+            <div id="progress-cirlces-section" class="progress-circles border-group-container full-width">
+                <span class="border-group-left">Виконано завдань:</span>
+                <span class="border-group-middle">
+                    <a href="../challenges/get_git.html"><div class="progress-circle" title="Get Git"></div></a>
+                    <a href="../challenges/repository.html"><div class="progress-circle" title="Repository"></div></a>
+                    <a href="../challenges/commit_to_it.html"><div class="progress-circle" title="Commit to it"></div></a>
+                    <a href="../challenges/githubbin.html"><div class="progress-circle" title="GitHubbin"></div></a>
+                    <a href="../challenges/remote_control.html"><div class="progress-circle" title="Remote Control"></div></a>
+                    <a href="../challenges/forks_and_clones.html"><div class="progress-circle" title="Forks and Clones"></div></a>
+                    <a href="../challenges/branches_arent_just_for_birds.html"><div class="progress-circle" title="Branches"></div></a>
+                    <a href="../challenges/its_a_small_world.html"><div class="progress-circle" title="It's a small world"></div></a>
+                    <a href="../challenges/pull_never_out_of_date.html"><div class="progress-circle" title="Pull, never out of date"></div></a>
+                    <a href="../challenges/requesting_you_pull_please.html"><div class="progress-circle" title="Requesting you pull please"></div></a>
+                    <a href="../challenges/merge_tada.html"><div class="progress-circle" title="Merge, tada!"></div></a>
+                </span>
+                <span class="border-group-right btn js-clear-all-challenges" title="Clear status"><span class="octicon octicon-trashcan"></span></span>
+            </div>
+
+            <div id="show-first-run">
+                <h1>Ласкаво просимо!</h1>
+                <p>Git-it навчає основам використання Git та GitHub. Ці основи не лише початкові навички Git'у та
+                    GitHub'у, це команди і кроки, які ви будете використовувати знову і знову у вашому дивовижному
+                    програмуванні + контролю версій майбутнього.</p>
+
+                <div class="chal-background light-blue solid-box">
+                    <h3>Але почекайте — Там більше</h3>
+                    <p>Ви також можете пройти Git-it іншими мовами, просто оберіть мову в верхньому лівому кутку.</p>
+
+                    <p>З допомогою меню згори ви можете перейти до <strong><a
+                            href="dictionary.html">Dictionary</a></strong>, <strong><a
+                            href="resources.html">Resources</a></strong> and <strong><a
+                            href="about.html">About</a></strong> page.</p>
+                </div>
+
+                <a href="../challenges/get_git.html" id="get-started"><button class="btn-primary">Розпочати перше завдання!</button></a>
+            </div>
+
+            <div id="show-wip-run">
+                <!-- <div class="progress-circles border-group-container full-width">
+                  <span class="border-group-left">Challenges completed:</span>
+                  <span class="border-group-middle">
+                    <a href="challenges/get_git.html"><div class="progress-circle" title="Get Git"></div></a>
+                    <a href="challenges/repository.html"><div class="progress-circle" title="Repository"></div></a>
+                    <a href="challenges/commit_to_it.html"><div class="progress-circle" title="Commit to it"></div></a>
+                    <a href="challenges/githubbin.html"><div class="progress-circle" title="GitHubbin"></div></a>
+                    <a href="challenges/remote_control.html"><div class="progress-circle" title="Remote Control"></div></a>
+                    <a href="challenges/forks_and_clones.html"><div class="progress-circle" title="Forks and Clones"></div></a>
+                    <a href="challenges/branches_arent_just_for_birds.html"><div class="progress-circle" title="Branches"></div></a>
+                    <a href="challenges/its_a_small_world.html"><div class="progress-circle" title="It's a small world"></div></a>
+                    <a href="challenges/pull_never_out_of_date.html"><div class="progress-circle" title="Pull, never out of date"></div></a>
+                    <a href="challenges/requesting_you_pull_please.html"><div class="progress-circle" title="Requesting you pull please"></div></a>
+                    <a href="challenges/merge_tada.html"><div class="progress-circle" title="Merge, tada!"></div></a>
+                  </span>
+                  <span class="border-group-right btn js-clear-all-challenges" title="Clear status"><span class="octicon octicon-trashcan"></span></span>
+                </div> -->
+                <h1>На вашому шляху!</h1>
+                    <p>У вас прогрес, продовжуйте в тому ж дусі і почніть з місця, де зупинилися.</p>
+                    <a id="left-off-from"><button class="btn-primary">Почніть з місця, де зупинилися!</button></a>
+            </div>
+
+            <div id="show-finished-run">
+                <!-- <div class="progress-circles border-group-container full-width">
+                  <span class="border-group-left">Challenges completed:</span>
+                  <span class="border-group-middle">
+                    <a href="challenges/get_git.html"><div class="progress-circle-completed" title="Get Git"></div></a>
+                    <a href="challenges/repository.html"><div class="progress-circle-completed" title="Repository"></div></a>
+                    <a href="challenges/commit_to_it.html"><div class="progress-circle-completed" title="Commit to it"></div></a>
+                    <a href="challenges/githubbin.html"><div class="progress-circle-completed" title="GitHubbin"></div></a>
+                    <a href="challenges/remote_control.html"><div class="progress-circle-completed" title="Remote Control"></div></a>
+                    <a href="challenges/forks_and_clones.html"><div class="progress-circle-completed" title="Forks and Clones"></div></a>
+                    <a href="challenges/branches_arent_just_for_birds.html"><div class="progress-circle-completed" title="Branches"></div></a>
+                    <a href="challenges/its_a_small_world.html"><div class="progress-circle-completed" title="It's a small world"></div></a>
+                    <a href="challenges/pull_never_out_of_date.html"><div class="progress-circle-completed" title="Pull, never out of date"></div></a>
+                    <a href="challenges/requesting_you_pull_please.html"><div class="progress-circle-completed" title="Requesting you pull please"></div></a>
+                    <a href="challenges/merge_tada.html"><div class="progress-circle-completed" title="Merge, tada!"></div></a>
+                  </span>
+                  <span class="border-group-right btn js-clear-all-challenges" title="Clear status"><span class="octicon octicon-trashcan"></span></span>
+                </div> -->
+                <h1>Вітаємо!</h1>
+                    <p>Ви завершили усі завдання?</p>
+                    <a href="resources.html"><button class="btn-primary">Ідея для початкових проектів</button></a>
+                    <button class="btn-secondary js-clear-all-challenges">Почати занjdj</button>
+            </div>
+
+        </div>
+        <script src="../../../lib/languages.js"></script>
+    </body>
+</html>

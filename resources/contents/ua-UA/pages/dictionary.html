@@ -1,0 +1,108 @@
+<p>Нижче ви знайдете перелік консольних команд, що використовуються в завданнях Git-it.</p>
+
+<h2>Базові команди Bash/Terminal</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Стфорити нову папку (директорію)</strong></li>
+        <code class="shell">mkdir &#60;FOLDERNAME&#62;</code>
+        <li><strong>Переміститись у вже існуючу папку (змінити директорію)</strong></li>
+        <code class="shell">cd &#60;FOLDERNAME&#62;</code>
+        <li><strong>Показати список елементів у папці</strong></li>
+        <code class="shell">ls </code>
+    </ul>
+</div>
+
+<h2>Налаштування Git</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Перевірити версію Git</strong></li>
+        <code>git --version</code>
+        <li><strong>Встановити ваше ім'я</strong></li>
+        <code>git config --global user.name "Your Name"</code>
+        <li><strong>Встановити вашу електронну адресу</strong></li>
+        <code>git config --global user.email youremail@example.com</code>
+        <li><strong>Встановити ваш Github акаунт (чутливий до регістру)</strong></li>
+        <code>git config --global user.username uSeRnAmE</code>
+    </ul>
+</div>
+
+<h2>Базові команди Git</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Увімкнути Git для папки</strong></li>
+        <code class="shell">git init</code>
+        <li><strong>Перевірити статус змін у репозиторії</strong></li>
+        <code class="shell">git status</code>
+        <li><strong>Показати зміни до файлів</strong></li>
+        <code class="shell">git diff</code>
+        <li><strong>Додати зміни файлу до коміту</strong></li>
+        <code class="shell">git add &#60;FILENAME&#62;</code>
+        <li><strong>Додати всі змінені файли до коміту</strong></li>
+        <code class="shell">git add .</code>
+        <li><strong>Зробити коміт (зберегти) змін із коротким описом ваших змін (повідомлення коміту)</strong>
+        </li>
+        <code class="shell">git commit -m "your commit message"</code>
+        <li><strong>Копіювати репозиторій на ваш комп'ютер</strong></li>
+        <code class="shell">git clone &#60;URL&#62;</code>
+    </ul>
+</div>
+
+<h2>Git Branches</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Створити нову гілку (branch)</strong></li>
+        <code class="shell">git branch &#60;BRANCHNAME&#62;</code>
+        <li><strong>Перейти на існуючу гілку (branch)</strong></li>
+        <code class="shell">git checkout &#60;BRANCHNAME&#62;</code>
+        <li><strong>Ви можете створити нову гілку і перейти на неї однією командою</strong></li>
+        <code class="shell">git checkout -b &#60;BRANCHNAME&#62;</code>
+        <li><strong>Показати список усіх гілок</strong></li>
+        <code class="shell">git branch</code>
+        <li><strong>Перейменувати гілку, на якій ви зараз знаходитесь</strong></li>
+        <code class="shell">git branch -m &#60;NEWBRANCHNAME&#62;</code>
+    </ul>
+</div>
+
+<h2>Git Remotes</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Додати віддалене з'єднання</strong></li>
+        <code class="shell">git remote add &#60;REMOTENAME&#62; &#60;URL&#62;</code>
+        <li><strong>Встановити URL для віддаленого з'єднання</strong></li>
+        <code class="shell">git remote set-url &#60;REMOTENAME&#62; &#60;URL&#62;</code>
+        <li><strong>Показати список віддалених з'єднань</strong></li>
+        <code class="shell">git remote -v</code>
+    </ul>
+</div>
+
+<h2>Pulling in Git</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Витягнути зміни ("зпулити")</strong></li>
+        <code class="shell">git pull</code>
+        <li><strong>Витягнути зміни із віддаленої гілки</strong></li>
+        <code class="shell">git pull &#60;REMOTENAME&#62; &#60;REMOTEBRANCH&#62;</code>
+        <li><strong>Переглянути зміни перш ніж "зпулити" їх</strong></li>
+        <code class="shell">git fetch --dry-run</code>
+    </ul>
+</div>
+
+<h2>Push &#38; Merge in Git</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Надіслати зміни (Push)</strong></li>
+        <code class="shell">git push &#60;REMOTENAME&#62; &#60;BRANCHNAME&#62;</code>
+        <li><strong>Злити іншу гілку у вибрану гілку (та, на якій ви зараз)</strong></li>
+        <code class="shell">git merge &#60;BRANCHNAME&#62;</code>
+    </ul>
+</div>
+
+<h2>Видалення віддалених з'єднань і гілок у Git</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Видалити локальну гілку</strong></li>
+        <code class="shell">git branch -D &#60;BRANCHNAME&#62;</code>
+        <li><strong>Видалити віддалену гілку</strong></li>
+        <code class="shell">git push &#60;REMOTENAME&#62; --delete &#60;BRANCHNAME&#62;</code>
+    </ul>
+</div>

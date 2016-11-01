@@ -1,0 +1,40 @@
+<div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Тримайте свій файл в актуальному стані, витягуючи зміни від співавторів.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h3>Виятгування із віддаленого репозиторію</h3>
+    <p>Якщо ви працюєте на чимось із кимось ще, вам буде потрібно підтримувати актуальний стан репозиторію. Тому
+        ви захочете <strong>pull</strong> (зтягнути) будь-які зміни, які могли бути надіслані до центрального GitHub
+        репозиторію.</p>
+
+    <img src="../../../assets/imgs/pull.png"
+         alt="Діаграма показує, як комп'ютер зтягує інформацію із веб-сайту репозиторію" width="100%">
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Що зробив Reporobot?</h3>
+    <p>Перевірте чи Reporobot зробив будь-які зміни до вашої гілки, зтягнувгши будь-які зміні із віддаленого з'єднання
+        'origin' на GitHub:</p>
+
+    <p><code class="shell">git pull &lt;REMOTENAME&gt; &lt;BRANCHNAME&gt;</code></p>
+
+    <p>Якщо нічого не змінилося, воно вам повідомить 'Already up-to-date'. Якщо ж там були будь-які зміни, Git зіллє
+        ці зміни із вашою локальною версією.</p>
+
+    <p>Reporobot зробив якісь зміни? Git скаже де саме були зроблені зміни. Ви можете відкрити цей файл і побачити
+        зміни Reporobot'а. Сюрприз, Reporobot — артист!</p>
+</div>
+
+{{{ verify_directory_button }}}
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Перевірити статус Git</strong></li>
+        <code class="shell">git status</code>
+        <li><strong>Зтягнути зміни із віддаленої гілки</strong></li>
+        <code class="shell">git pull &lt;REMOTENAME&gt; &lt;REMOTEBRANCH&gt;</code>
+        <li><strong>Перевірити зміни, перш ніж зтягувати їх</strong></li>
+        <code class="shell">git fetch --dry-run</code>
+    </ul>
+</div>
